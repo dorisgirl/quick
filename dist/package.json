@@ -1,0 +1,19 @@
+{
+  "name": "shequ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fis-conf.js",
+  "dependencies": {
+    "fis-spriter-csssprites-group": "0.3.23",
+    "fis3-hook-relative": "1.0.9",
+    "fis3-parser-translate-es6": "^1.0.1",
+    "fis3-parser-translate-es6-bg": "^1.0.2",
+    "fis3-postprocessor-autoprefixer": "1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

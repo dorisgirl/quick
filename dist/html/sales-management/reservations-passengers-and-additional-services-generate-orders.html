@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>quick</title>
+    <link rel="stylesheet" href="../../css/index.css" />
+</head>
+<body>
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=1280,user-scalable=no"><div class="header">
+    <div class="layout-center">
+        <div class="header-logo"></div>
+        <div class="header-user">
+            <a href="javascript:">
+                <img src="../../img/header-user.png" alt="">
+                <span class="header-user-name">Dashboar</span>
+                <span class="header-user-icon"></span>
+            </a>
+            <div class="header-user-dropdown">
+                <ul>
+                    <li><a href="javascript:"><span class="header-user-lock"></span>密码修改</a></li>
+                    <li id="header-user-info"><a href="javascript:"><span class="header-user-info"></span>资料修改</a></li>
+                    <li><a href="javascript:"><span class="header-user-cn"></span>中文</a></li>
+                    <li><a href="javascript:"><span class="header-user-en"></span>English</a></li>
+                    <li><a href="javascript:"><span class="header-user-logout"></span>退出修改</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="layout-center">
+        <a href="javascript:" class="menu-switch"></a>
+        <a href="javascript:" class="menu-prev"></a>
+        <div class="menu-list">
+            <ul>
+                <li class="active"><a href="javascript:">首页</a></li>
+                <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+            </ul>
+        </div>
+        <div class="menu-mask"></div>
+        <a href="javascript:" class="menu-next"></a>
+    </div>
+</div>
+    <div class="layout-r2">
+        <div class="layout-center">
+            <div class="layout-r2c1 hide">
+                <div class="sidebar">
+    <ul>
+        <li class="sidebar-parent active">
+            <a href="javascript:"><span class="sidebar-icon1"></span>航班管理<span class="sidebar-arrow"></span></a>
+            <ul class="sidebar-list">
+                <li><a href="">销售布局模板</a></li>
+                <li><a href="">附加服务模板</a></li>
+                <li><a href="">主座位模板</a></li>
+                <li><a href="">航班计划</a></li>
+                <li><a href="">管理库存</a></li>
+                <li><a href="">航班座位图</a></li>
+            </ul>
+        </li>
+        <li class="sidebar-parent">
+            <a href="javascript:"><span class="sidebar-icon2"></span>产品管理<span class="sidebar-arrow"></span></a>
+            <ul class="sidebar-list">
+                <li><a href="">航班产品价格</a></li>
+                <li><a href="">餐食产品价格</a></li>
+                <li><a href="">行李产品价格</a></li>
+                <li><a href="">座位产品价格</a></li>
+                <li><a href="">保险产品价格</a></li>
+                <li><a href="">品牌产品价格</a></li>
+                <li><a href="">销售规则</a></li>
+                <li><a href="">退改规定</a></li>
+                <li><a href="">税费</a></li>
+            </ul>
+        </li>
+        <li class="sidebar-parent">
+            <a href="javascript:"><span class="sidebar-icon3"></span>销售管理<span class="sidebar-arrow"></span></a>
+            <ul class="sidebar-list">
+                <li><a href="">预订</a></li>
+                <li><a href="">订单</a></li>
+                <li><a href="">业务审核退票</a></li>
+                <li><a href="">财务审核退票</a></li>
+                <li><a href="">业务审核差错</a></li>
+                <li><a href="">财务审核差错</a></li>
+            </ul>
+        </li>
+        <li class="sidebar-parent">
+            <a href="javascript:"><span class="sidebar-icon4"></span>旅客统计<span class="sidebar-arrow"></span></a>
+            <ul class="sidebar-list">
+                <li><a href="">旅客信息</a></li>
+                <li><a href="">旅客管理</a></li>
+            </ul>
+        </li>
+        <li class="sidebar-parent">
+            <a href="javascript:"><span class="sidebar-icon5"></span>统计报表<span class="sidebar-arrow"></span></a>
+            <ul class="sidebar-list">
+                <li><a href="">销售报表</a></li>
+                <li><a href="">仪表盘</a></li>
+                <li><a href="">WEB渠道统计</a></li>
+                <li><a href="">API流量统计</a></li>
+                <li><a href="">导出报表</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            </div>
+            <div class="layout-r2c2">
+                <div class="product">
+                    <div class="product-form">
+                        <div class="product-between" style="margin-bottom:13px">
+                            <div class="text-bigger"><div class="product-ticket"></div>预订机票</div>
+                            <div class="step">
+                                <ul>
+                                    <li class="active"><div class="step-circle"><div class="step-plane"></div></div>航班</li>
+                                    <li class="active current"><div class="step-line"></div><div class="step-circle-big"><div class="step-plane"></div></div>乘客&服务</li>
+                                    <li class=""><div class="step-line"></div><div class="step-circle"><div class="step-plane"></div></div>付款</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>旅客 1 - 成人</h2>
+                        <ul class="form form-3col">
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="张三" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="男" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="1989-04-23" disabled>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form form-3col">
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="身份证" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="101254124554654477 " disabled>
+                            </li>
+                            <li>
+                                <input type="text" class="input input-small" value="1234567891220" disabled>
+                            </li>
+                        </ul>
+                        <h2 style="margin-top:55px">旅客 2 - 儿童</h2>
+                        <ul class="form form-3col">
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="张三" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="男" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="1989-04-23" disabled>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form form-3col">
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="身份证" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="101254124554654477 " disabled>
+                            </li>
+                            <li>
+                                <input type="text" class="input input-small" value="1234567891220" disabled>
+                            </li>
+                        </ul>
+                        <h2 style="margin-top:55px">旅客 3 - 婴儿</h2>
+                        <ul class="form form-3col">
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="张三" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="男" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="1989-04-23" disabled>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form form-3col">
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="身份证" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="101254124554654477 " disabled>
+                            </li>
+                            <li>
+                                <input type="text" class="input input-small" value="1234567891220" disabled>
+                            </li>
+                        </ul>
+                        <hr style="border-style:dashed">
+                        <div class="product-contact">
+                            联系人
+                            <a href="" class="btn-primary btn-mini disabled">旅客1 (张三四)</a>
+                            <a href="" class="btn-normal btn-mini disabled">旅客2 (WT)</a>
+                            <a href="" class="btn-normal btn-mini disabled">旅客3 (WT)</a>
+                        </div>
+                        <ul class="form form-3col">
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="张三四" disabled>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="text" class="input input-small" value="18056578800" disabled>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-form">
+                        <div class="product-additional">
+                            <div class="text-bigger">
+                                <div class="product-additional-header"></div>
+                                额外服务
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="product-additional-icon1"></div>
+                                    行李服务
+                                </li>
+                                <li>
+                                    <div class="product-additional-icon2"></div>
+                                    保险服务
+                                </li>
+                                <li>
+                                    <div class="product-additional-icon3"></div>
+                                    机上餐食
+                                </li>
+                                <li id="dialog-seat">
+                                    <div class="product-additional-icon4"></div>
+                                    机上选座
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-r2c3">
+                <div class="product-section">
+                    <span class="product-section-icon1"></span>
+                    <span class="text-big">订单总价 :</span>
+                    <span class="text-price text-large">￥4566</span>
+                    <span class="text-gray">(含税)</span>
+                </div>
+                <div class="product-section">
+                    <div class="product-section-header">
+                        <span class="product-section-icon2"></span>
+                        <span class="text-big">去程航班：</span>
+                    </div>
+                    <div class="product-section-flight">
+                        <div class="text-big text-dark"><span style="margin-right:14px">CA1881</span>2015-10-12</div>
+                        <div class="product-between">
+                            <div class="text-big product-section-flight-c1">深圳保安 T2<br>09:45</div>
+                            <div class="product-plane"></div>
+                            <div class="text-big">北京首都 T3<br>12:10</div>
+                        </div>
+                    </div>
+                    <div class="product-section-header">
+                        <span class="product-section-icon3"></span>
+                        <span class="text-big">乘机旅客：</span>
+                    </div>
+                    <div class="tree">
+                        <ul>
+                            <li class="active">
+                                <div class="tree-parent">
+                                    <div>成人 -1<a href="javascript:" class="tree-arrow"></a></div>
+                                    <div class="text-price">￥2688</div>
+                                </div>
+                                <ul>
+                                    <li><div class="text-gray"><div class="tree-line"></div>机票</div><div class="text-gray">￥2000</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>机建</div><div class="text-gray">￥600</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>燃油</div><div class="text-gray">￥88</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>行李</div><div class="text-gray">￥88</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>餐食</div><div class="text-gray">￥88</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>座位</div><div class="text-gray">￥88</div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-parent">
+                                    <div>成人 -2<a href="javascript:" class="tree-arrow"></a></div>
+                                    <div class="text-price">￥2688</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-parent">
+                                    <div>儿童<a href="javascript:" class="tree-arrow"></a></div>
+                                    <div class="text-price">￥2688</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-parent">
+                                    <div>婴儿<a href="javascript:" class="tree-arrow"></a></div>
+                                    <div class="text-price">￥2688</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-section">
+                    <div class="product-section-header">
+                        <span class="product-section-icon4"></span>
+                        <span class="text-big">返程航班：</span>
+                    </div>
+                    <div class="product-section-flight">
+                        <div class="text-big text-dark"><span style="margin-right:14px">CA1881</span>2015-10-12</div>
+                        <div class="product-between">
+                            <div class="text-big product-section-flight-c1">深圳保安 T2<br>09:45</div>
+                            <div class="product-plane"></div>
+                            <div class="text-big">北京首都 T3<br>12:10</div>
+                        </div>
+                    </div>
+                    <div class="product-section-header">
+                        <span class="product-section-icon3"></span>
+                        <span class="text-big">乘机旅客：</span>
+                    </div>
+                    <div class="tree">
+                        <ul>
+                            <li class="active">
+                                <div class="tree-parent">
+                                    <div>成人 -1<a href="javascript:" class="tree-arrow"></a></div>
+                                    <div class="text-price">￥2688</div>
+                                </div>
+                                <ul>
+                                    <li><div class="text-gray"><div class="tree-line"></div>机票</div><div class="text-gray">￥2000</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>机建</div><div class="text-gray">￥600</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>燃油</div><div class="text-gray">￥88</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>行李</div><div class="text-gray">￥88</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>餐食</div><div class="text-gray">￥88</div></li>
+                                    <li><div class="text-gray"><div class="tree-line"></div>座位</div><div class="text-gray">￥88</div></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-parent">
+                                    <div>成人 -2<a href="javascript:" class="tree-arrow"></a></div>
+                                    <div class="text-price">￥2688</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-parent">
+                                    <div>儿童<a href="javascript:" class="tree-arrow"></a></div>
+                                    <div class="text-price">￥2688</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-parent">
+                                    <div>婴儿<a href="javascript:" class="tree-arrow"></a></div>
+                                    <div class="text-price">￥2688</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-footer">
+            <span class="text-big">订单总价 :</span>
+            <span class="text-large text-price">￥4566</span>
+            <div class="text-gray">(含税)</div>
+            <a href="" class="btn-normal">重新预订</a>
+            <a href="" class="btn-primary">去支付</a>
+        </div>
+    </div>
+    <div class="dialog dialog-seat hide">
+        <div class="dialog-inner">
+            <div class="dialog-header">
+                <h2>选座</h2>
+                <a href="javascript:" class="dialog-close"></a>
+            </div>
+            <div class="dialog-main">
+                <div class="dialog-seat-between">
+                    <div class="dialog-seat-form">
+                        <div class="dialog-seat-tab">
+                            <a href="">PEK-SHA</a>
+                            <a class="text-gray" href="">SHA-PEK</a>
+                        </div>
+                        <ul>
+                            <li><label>刘亦菲<input type="text" class="input"></label></li>
+                            <li><label>刘亦菲<input type="text" class="input"></label></li>
+                            <li><label>刘亦菲<input type="text" class="input"></label></li>
+                            <li><label>刘亦菲<input type="text" class="input"></label></li>
+                            <li><label>刘亦菲<input type="text" class="input"></label></li>
+                            <li><label>刘亦菲<input type="text" class="input"></label></li>
+                            <li><label>刘亦菲<input type="text" class="input"></label></li>
+                            <li><label>刘亦菲<input type="text" class="input"></label></li>
+                        </ul>
+                    </div>
+                    <div class="dialog-seat-select">
+                        <div class="plane-seat-economy">
+                            <div class="plane-seat-row dialog-seat-select-row">
+                                <div>
+                                    <div class="plane-seat-normal">
+                                        <div class="plane-seat-people"></div>
+                                    </div>
+                                    <div class="text-big text-gray">可选</div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-disabled">
+                                        <div class="plane-seat-people"></div>
+                                    </div>
+                                    <div class="text-big text-gray">已售</div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-primary">
+                                    </div>
+                                    <div class="text-big text-gray">已选</div>
+                                </div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div>
+                                    <div class="plane-seat-no">A</div>
+                                    <div class="plane-seat-no">B</div>
+                                    <div class="plane-seat-no">C</div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-no">D</div>
+                                    <div class="plane-seat-no">E</div>
+                                    <div class="plane-seat-no">F</div>
+                                </div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">1</div>
+                                <div>
+                                    <div class="plane-seat-primary"></div>
+                                    <div class="plane-seat-primary"></div>
+                                    <div class="plane-seat-primary"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">1</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">2</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">2</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">3</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-disabled">
+                                        <div class="plane-seat-people"></div>
+                                    </div>
+                                    <div class="plane-seat-disabled">
+                                        <div class="plane-seat-people"></div>
+                                    </div>
+                                    <div class="plane-seat-disabled">
+                                        <div class="plane-seat-people"></div>
+                                    </div>
+                                </div>
+                                <div class="plane-seat-index2">3</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">4</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">4</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">5</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">5</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">6</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">6</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">7</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">7</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">8</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">8</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">9</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">9</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">10</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">10</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">11</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">11</div>
+                            </div>
+                            <div class="plane-seat-row">
+                                <div class="plane-seat-index">12</div>
+                                <div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div>
+                                    <div class="plane-seat-normal">
+                                    </div>
+                                    <div class="plane-seat-normal"></div>
+                                    <div class="plane-seat-normal"></div>
+                                </div>
+                                <div class="plane-seat-index2">12</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <ul class="dialog-seat-info">
+                        <li><div class="plane-info1"></div><span class="dialog-seat-info-text">VIP专享</span>￥0</li>
+                        <li><div class="plane-info2"></div><span class="dialog-seat-info-text">靠窗坐</span>￥0</li>
+                        <li><div class="plane-info3"></div><span class="dialog-seat-info-text">宽敞座</span>￥0</li>
+                        <li><div class="plane-info4"></div><span class="dialog-seat-info-text">舒适座</span>￥0</li>
+                        <li><div class="plane-info5"></div><span class="dialog-seat-info-text">普通座</span>￥0</li>
+                        <li><div class="plane-info6"></div><span class="dialog-seat-info-text">免费座位</span>￥0</li>
+                        <li><div class="plane-info1"></div><span class="dialog-seat-info-text">座位7</span>￥0</li>
+                        <li><div class="plane-info2"></div><span class="dialog-seat-info-text">座位8</span>￥0</li>
+                        <li><div class="plane-info3"></div><span class="dialog-seat-info-text">座位9</span>￥0</li>
+                        <li><div class="plane-info4"></div><span class="dialog-seat-info-text">座位10</span>￥0</li>
+                        <li><div class="plane-info5"></div><span class="dialog-seat-info-text">座位11</span>￥0</li>
+                        <li><div class="plane-info6"></div><span class="dialog-seat-info-text">座位12</span>￥0</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <a href="javascript:" class="btn-primary">保存</a>
+                <a href="javascript:" class="btn-normal">取消</a>
+            </div>
+        </div>
+    </div>
+    <div class="dialog dialog-info hide">
+    <div class="dialog-inner">
+        <div class="dialog-header">
+            <h2>修改用户信息</h2>
+            <a href="javascript:" class="dialog-close"></a>
+        </div>
+        <div class="dialog-main">
+            <ul class="form">
+                <li>
+                    <label>
+                        账号
+                        <input type="text" class="input" value="VIPUI" disabled>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        部门
+                        <input type="text" class="input" value="QK_MANAGER" disabled>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        帐号状态
+                        <input type="text" class="input">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        申请人姓名
+                        <span class="form-require">*</span>
+                        <input type="text" class="input">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        手机
+                        <input type="text" class="input" value="18818809999">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        邮箱
+                        <input type="text" class="input" value="18818809999@163.com">
+                    </label>
+                </li>
+            </ul>
+            <label>
+                备注
+                <textarea class="textarea"></textarea>
+            </label>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">保存</a>
+        </div>
+    </div>
+</div>
+<script>
+    (function() {
+            function changeViewport() {
+            var u = navigator.userAgent;
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            var windowWidth;
+
+            if (window.orientation == 90 || window.orientation == -90 && isiOS) {
+            windowWidth = window.screen.height;
+            } else {
+            windowWidth = window.screen.width;
+            }
+
+            if (windowWidth < 1280) {
+                var ratio = windowWidth / 1280;
+                var metas = document.querySelectorAll("meta[name=viewport]");
+                for (var i in metas) {
+                    if (typeof metas[i].setAttribute == 'function') {
+                        metas[i].setAttribute('content', 'width=1280, initial-scale=' + ratio + ', maximum-scale=' + ratio + '');
+                    }
+                }
+            }
+        }
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", changeViewport, false);
+    })();
+</script>
+<script src="../../js/pages/common.js"></script>
+<script src="../../js/pages/index.js"></script>
+</body>
+</html>

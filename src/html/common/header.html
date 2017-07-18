@@ -1,0 +1,73 @@
+<meta name="viewport" content="target-densitydpi=device-dpi,width=1280,user-scalable=no">
+<script>
+    (function() {
+            function changeViewport() {
+            var u = navigator.userAgent;
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            var windowWidth;
+
+            if (window.orientation == 90 || window.orientation == -90 && isiOS) {
+            windowWidth = window.screen.height;
+            } else {
+            windowWidth = window.screen.width;
+            }
+
+            if (windowWidth < 1280) {
+                var ratio = windowWidth / 1280;
+                var metas = document.querySelectorAll("meta[name=viewport]");
+                for (var i in metas) {
+                    if (typeof metas[i].setAttribute == 'function') {
+                        metas[i].setAttribute('content', 'width=1280, initial-scale=' + ratio + ', maximum-scale=' + ratio + '');
+                    }
+                }
+            }
+        }
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", changeViewport, false);
+    })();
+</script>
+<div class="header">
+    <div class="layout-center">
+        <div class="header-logo"></div>
+        <div class="header-user">
+            <a href="javascript:">
+                <img src="../../img/header-user.png" alt="">
+                <span class="header-user-name">Dashboar</span>
+                <span class="header-user-icon"></span>
+            </a>
+            <div class="header-user-dropdown">
+                <ul>
+                    <li><a href="javascript:"><span class="header-user-lock"></span>密码修改</a></li>
+                    <li id="header-user-info"><a href="javascript:"><span class="header-user-info"></span>资料修改</a></li>
+                    <li><a href="javascript:"><span class="header-user-cn"></span>中文</a></li>
+                    <li><a href="javascript:"><span class="header-user-en"></span>English</a></li>
+                    <li><a href="javascript:"><span class="header-user-logout"></span>退出修改</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="layout-center">
+        <a href="javascript:" class="menu-switch"></a>
+        <a href="javascript:" class="menu-prev"></a>
+        <div class="menu-list">
+            <ul>
+                <li class="active"><a href="javascript:">首页</a></li>
+                <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
+                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+            </ul>
+        </div>
+        <div class="menu-mask"></div>
+        <a href="javascript:" class="menu-next"></a>
+    </div>
+</div>

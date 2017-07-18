@@ -1,0 +1,16 @@
+<svg id="组_263" data-name="组 263" xmlns="http://www.w3.org/2000/svg" width="12.031" height="14" viewBox="0 0 12.031 14">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #333;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        opacity: 0.4;
+      }
+    </style>
+  </defs>
+  <path id="多边形_1" data-name="多边形 1" class="cls-1" d="M607.88,3551.04l6.012,5.99H601.869Z" transform="translate(-601.875 -3551.03)"/>
+  <path id="多边形_1_拷贝" data-name="多边形 1 拷贝" class="cls-2" d="M607.88,3565.03l6.012-5.99H601.869Z" transform="translate(-601.875 -3551.03)"/>
+</svg>

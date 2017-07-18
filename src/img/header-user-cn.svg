@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7c7c7c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="圆角矩形_2" data-name="圆角矩形 2" class="cls-1" d="M1278,203h7a4,4,0,0,1,4,4v7a4,4,0,0,1-4,4h-7a4,4,0,0,1-4-4v-7A4,4,0,0,1,1278,203Zm4.04,8.312v-1.94h2.06v1.94h-2.06Zm-3.2,0v-1.94h2.05v1.94h-2.05Zm3.2-3v-1.561h-1.15v1.561h-3.15v4.549h1.1v-0.5h2.05v2.816h1.15v-2.816h2.06v0.451h1.14v-4.5h-3.2Z" transform="translate(-1274 -203)"/>
+</svg>
