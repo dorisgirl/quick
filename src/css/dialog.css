@@ -1,1 +1,205 @@
-.dialog{background:rgba(0,0,0,.2);left:0;right:0;top:0;bottom:0;position:absolute;z-index:999}.dialog-inner{width:680px;position:absolute;background:#fff;left:50%;top:100px;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0)}.dialog-header{height:70px;line-height:70px;background:#f7f9fb;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:0 20px}.dialog-header h2{font-size:16px}.dialog-close{width:14px;height:14px;background:url(../img/dialog-close.svg) no-repeat}.dialog-main{padding:50px 40px}.dialog-footer{margin:30px 0 70px;text-align:center}.dialog-footer a{margin:0 4px}.dialog-info .form{overflow:hidden;margin-left:-14px}.dialog-info li{float:left;width:190px;margin-left:14px;margin-bottom:49px}.dialog-small .dialog-inner{width:360px}.dialog-small .dialog-main{padding:47px 0;text-align:center}.dialog-small .dialog-footer{margin-bottom:44px;margin-top:0}.dialog-small .dialog-footer a{width:120px;margin:0 14px}.dialog-success,.dialog-error{width:60px;height:60px;margin-bottom:20px;display:inline-block}.dialog-success{background:url(../img/dialog-success.svg) no-repeat}.dialog-error{background:url(../img/dialog-error.svg) no-repeat}.dialog-seat .dialog-inner{width:1007px}.dialog-seat .dialog-main{padding:40px 31px}.dialog-seat-between{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.dialog-seat-info{width:210px;padding:41px 24px;border:1px solid #e5e5e5}.dialog-seat-info li{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;margin-bottom:26px}.dialog-seat-info-text{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1}.dialog-seat-info li:last-child{margin-bottom:0}.dialog-seat-form{width:240px;border:1px solid #e5e5e5}.dialog-seat-form ul{padding:38px 21px}.dialog-seat-form li{margin-bottom:20px}.dialog-seat-form li:last-child{margin-bottom:0}.dialog-seat-form .input{width:144px;height:36px;line-height:36px;margin-left:10px}.dialog-seat-tab{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.dialog-seat-tab a{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;text-align:center;height:20px;border-right:1px solid #e5e5e5}.dialog-seat-tab a:last-child{border-right:0}.dialog-seat-tab{padding:17px 0;border-bottom:1px solid #e5e5e5}.dialog-seat-select{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;height:600px;overflow-y:auto;margin:0 10px;border:1px solid #e5e5e5;padding:32px 70px}.dialog-seat-select-row{margin-bottom:18px}.dialog-seat-select-row .text-gray{margin-left:11px;margin-top:5px}.dialog-form{padding:0 50px;text-align:left}.dialog-form .text-dark{margin-bottom:16px}.dialog-form input{margin-bottom:20px}
+.dialog {
+    background: rgba(0, 0, 0, .2);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 999
+}
+
+.dialog-inner {
+    width: 680px;
+    position: absolute;
+    background: #fff;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, 0)
+}
+
+.dialog-header {
+    height: 70px;
+    line-height: 70px;
+    background: #f7f9fb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px
+}
+
+.dialog-header h2 {
+    font-size: 16px
+}
+
+.dialog-close {
+    width: 14px;
+    height: 14px;
+    background: url(../img/dialog-close.svg) no-repeat
+}
+
+.dialog-main {
+    padding: 50px 40px
+}
+
+.dialog-footer {
+    margin: 30px 0 70px;
+    text-align: center
+}
+
+.dialog-footer a {
+    margin: 0 4px
+}
+
+.dialog-info .form {
+    overflow: hidden;
+    margin-left: -14px
+}
+
+.dialog-info li {
+    float: left;
+    width: 190px;
+    margin-left: 14px;
+    margin-bottom: 49px
+}
+
+.dialog-small .dialog-inner {
+    width: 360px
+}
+
+.dialog-small .dialog-main {
+    padding: 47px 0;
+    text-align: center
+}
+
+.dialog-small .dialog-footer {
+    margin-bottom: 44px;
+    margin-top: 0
+}
+
+.dialog-small .dialog-footer a {
+    width: 120px;
+    margin: 0 14px
+}
+
+.dialog-success,
+.dialog-error {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    display: inline-block
+}
+
+.dialog-success {
+    background: url(../img/dialog-success.svg) no-repeat
+}
+
+.dialog-error {
+    background: url(../img/dialog-error.svg) no-repeat
+}
+
+.dialog-seat .dialog-inner {
+    width: 1007px
+}
+
+.dialog-seat .dialog-main {
+    padding: 40px 31px
+}
+
+.dialog-seat-between {
+    display: flex;
+    justify-content: space-between
+}
+
+.dialog-seat-info {
+    width: 210px;
+    padding: 41px 24px;
+    border: 1px solid #e5e5e5
+}
+
+.dialog-seat-info li {
+    display: flex;
+    margin-bottom: 26px
+}
+
+.dialog-seat-info-text {
+    flex: 1
+}
+
+.dialog-seat-info li:last-child {
+    margin-bottom: 0
+}
+
+.dialog-seat-form {
+    width: 240px;
+    border: 1px solid #e5e5e5
+}
+
+.dialog-seat-form ul {
+    padding: 38px 21px
+}
+
+.dialog-seat-form li {
+    margin-bottom: 20px
+}
+
+.dialog-seat-form li:last-child {
+    margin-bottom: 0
+}
+
+.dialog-seat-form .input {
+    width: 144px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 10px
+}
+
+.dialog-seat-tab {
+    display: flex
+}
+
+.dialog-seat-tab a {
+    flex: 1;
+    text-align: center;
+    height: 20px;
+    border-right: 1px solid #e5e5e5
+}
+
+.dialog-seat-tab a:last-child {
+    border-right: 0
+}
+
+.dialog-seat-tab {
+    padding: 17px 0;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.dialog-seat-select {
+    flex: 1;
+    height: 600px;
+    overflow-y: auto;
+    margin: 0 10px;
+    border: 1px solid #e5e5e5;
+    padding: 32px 70px
+}
+
+.dialog-seat-select-row {
+    margin-bottom: 18px
+}
+
+.dialog-seat-select-row .text-gray {
+    margin-left: 11px;
+    margin-top: 5px
+}
+
+.dialog-form {
+    padding: 0 50px;
+    text-align: left
+}
+
+.dialog-form .text-dark {
+    margin-bottom: 16px
+}
+
+.dialog-form input {
+    margin-bottom: 20px
+}
