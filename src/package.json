@@ -5,9 +5,11 @@
   "main": "fis-conf.js",
   "dependencies": {
     "fis-spriter-csssprites-group": "0.3.23",
+    "fis3-hook-module": "1.2.2",
     "fis3-hook-relative": "1.0.9",
     "fis3-parser-translate-es6": "^1.0.1",
     "fis3-parser-translate-es6-bg": "^1.0.2",
+    "fis3-postpackager-loader": "2.1.4",
     "fis3-postprocessor-autoprefixer": "1.0.0"
   },
   "devDependencies": {},

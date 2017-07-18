@@ -1,118 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>quick</title>
     <link rel="stylesheet" href="../../css/index.css" />
 </head>
+
 <body>
-    <meta name="viewport" content="target-densitydpi=device-dpi,width=1280,user-scalable=no"><div class="header">
-    <div class="layout-center">
-        <div class="header-logo"></div>
-        <div class="header-user">
-            <a href="javascript:">
-                <img src="../../img/header-user.png" alt="">
-                <span class="header-user-name">Dashboar</span>
-                <span class="header-user-icon"></span>
-            </a>
-            <div class="header-user-dropdown">
-                <ul>
-                    <li><a href="javascript:"><span class="header-user-lock"></span>密码修改</a></li>
-                    <li id="header-user-info"><a href="javascript:"><span class="header-user-info"></span>资料修改</a></li>
-                    <li><a href="javascript:"><span class="header-user-cn"></span>中文</a></li>
-                    <li><a href="javascript:"><span class="header-user-en"></span>English</a></li>
-                    <li><a href="javascript:"><span class="header-user-logout"></span>退出修改</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="menu">
-    <div class="layout-center">
-        <a href="javascript:" class="menu-switch"></a>
-        <a href="javascript:" class="menu-prev"></a>
-        <div class="menu-list">
-            <ul>
-                <li class="active"><a href="javascript:">首页</a></li>
-                <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
-            </ul>
-        </div>
-        <div class="menu-mask"></div>
-        <a href="javascript:" class="menu-next"></a>
-    </div>
-</div>
+    <link rel="import" href="../common/header.html?__inline">
     <div class="layout-r1">
         <div class="layout-center">
             <div class="layout-r1c1 hide">
-                <div class="sidebar">
-    <ul>
-        <li class="sidebar-parent active">
-            <a href="javascript:"><span class="sidebar-icon1"></span>航班管理<span class="sidebar-arrow"></span></a>
-            <ul class="sidebar-list">
-                <li><a href="">销售布局模板</a></li>
-                <li><a href="">附加服务模板</a></li>
-                <li><a href="">主座位模板</a></li>
-                <li><a href="">航班计划</a></li>
-                <li><a href="">管理库存</a></li>
-                <li><a href="">航班座位图</a></li>
-            </ul>
-        </li>
-        <li class="sidebar-parent">
-            <a href="javascript:"><span class="sidebar-icon2"></span>产品管理<span class="sidebar-arrow"></span></a>
-            <ul class="sidebar-list">
-                <li><a href="">航班产品价格</a></li>
-                <li><a href="">餐食产品价格</a></li>
-                <li><a href="">行李产品价格</a></li>
-                <li><a href="">座位产品价格</a></li>
-                <li><a href="">保险产品价格</a></li>
-                <li><a href="">品牌产品价格</a></li>
-                <li><a href="">销售规则</a></li>
-                <li><a href="">退改规定</a></li>
-                <li><a href="">税费</a></li>
-            </ul>
-        </li>
-        <li class="sidebar-parent">
-            <a href="javascript:"><span class="sidebar-icon3"></span>销售管理<span class="sidebar-arrow"></span></a>
-            <ul class="sidebar-list">
-                <li><a href="">预订</a></li>
-                <li><a href="">订单</a></li>
-                <li><a href="">业务审核退票</a></li>
-                <li><a href="">财务审核退票</a></li>
-                <li><a href="">业务审核差错</a></li>
-                <li><a href="">财务审核差错</a></li>
-            </ul>
-        </li>
-        <li class="sidebar-parent">
-            <a href="javascript:"><span class="sidebar-icon4"></span>旅客统计<span class="sidebar-arrow"></span></a>
-            <ul class="sidebar-list">
-                <li><a href="">旅客信息</a></li>
-                <li><a href="">旅客管理</a></li>
-            </ul>
-        </li>
-        <li class="sidebar-parent">
-            <a href="javascript:"><span class="sidebar-icon5"></span>统计报表<span class="sidebar-arrow"></span></a>
-            <ul class="sidebar-list">
-                <li><a href="">销售报表</a></li>
-                <li><a href="">仪表盘</a></li>
-                <li><a href="">WEB渠道统计</a></li>
-                <li><a href="">API流量统计</a></li>
-                <li><a href="">导出报表</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
+                <link rel="import" href="../common/sidebar.html?__inline">
             </div>
             <div class="layout-r1c2">
                 <div class="product">
@@ -142,7 +43,7 @@
                                     <input type="text" class="input input-small" placeholder="输入三字码">
                                 </label>
                             </li>
-                             <li>
+                            <li>
                                 <label>
                                     至
                                     <input type="text" class="input input-small" placeholder="输入三字码">
@@ -155,7 +56,8 @@
                     </div>
                     <div class="product-table">
                         <div class="chart">
-                            <div class="text-bigger"><div class="chart-icon1"></div>收入</div>
+                            <div class="text-bigger">
+                                <div class="chart-icon1"></div>收入</div>
                             <div class="product-between">
                                 <div id="circle5" class="circle"></div>
                                 <div id="line-bar5" class="line-bar"></div>
@@ -173,7 +75,8 @@
                             <div class="chart-toggle"><a href="javascript:">收起<div class="chart-toggle-icon"></div></a></div>
                         </div>
                         <div class="chart">
-                            <div class="text-bigger"><div class="chart-icon2"></div>收益</div>
+                            <div class="text-bigger">
+                                <div class="chart-icon2"></div>收益</div>
                             <div class="product-between">
                                 <div id="circle1" class="circle"></div>
                                 <div id="line-bar1" class="line-bar"></div>
@@ -187,8 +90,12 @@
                                 <div class="text-big">2016-04-05航班收益情况</div>
                                 <div class="chart-progress">
                                     <div class="chart-sort">
-                                        <div>航段均价<div class="chart-sort-icon"></div></div>
-                                        <div>座公里收入<div class="chart-sort-icon"></div></div>
+                                        <div>航段均价
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>座公里收入
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
                                     </div>
                                     <div class="product-between">
                                         <ul>
@@ -197,7 +104,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -205,7 +112,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -213,7 +120,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -221,7 +128,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -229,7 +136,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -237,7 +144,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -245,7 +152,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -253,7 +160,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -261,7 +168,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -269,7 +176,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -279,7 +186,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -287,7 +194,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -295,7 +202,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -303,7 +210,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -311,7 +218,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -319,7 +226,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -327,7 +234,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -335,7 +242,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -343,7 +250,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -351,7 +258,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -366,8 +273,12 @@
                                         </div>
                                     </div>
                                     <div class="chart-sort">
-                                        <div>航段均价<div class="chart-sort-icon"></div></div>
-                                        <div>座公里收入<div class="chart-sort-icon"></div></div>
+                                        <div>航段均价
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>座公里收入
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
                                     </div>
                                     <div class="product-between">
                                         <ul>
@@ -376,7 +287,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -384,7 +295,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -392,7 +303,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -400,7 +311,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -408,7 +319,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -416,7 +327,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -424,7 +335,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -432,7 +343,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -440,7 +351,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -448,7 +359,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -458,7 +369,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -466,7 +377,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -474,7 +385,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -482,7 +393,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -490,7 +401,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -498,7 +409,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -506,7 +417,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -514,7 +425,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -522,7 +433,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -530,7 +441,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -545,8 +456,12 @@
                                         </div>
                                     </div>
                                     <div class="chart-sort">
-                                        <div>航段均价<div class="chart-sort-icon"></div></div>
-                                        <div>座公里收入<div class="chart-sort-icon"></div></div>
+                                        <div>航段均价
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>座公里收入
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
                                     </div>
                                     <div class="product-between">
                                         <ul>
@@ -555,7 +470,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -563,7 +478,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -571,7 +486,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -579,7 +494,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -587,7 +502,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -595,7 +510,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -603,7 +518,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -611,7 +526,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -619,7 +534,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -627,7 +542,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -637,7 +552,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -645,7 +560,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -653,7 +568,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -661,7 +576,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -669,7 +584,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -677,7 +592,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -685,7 +600,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -693,7 +608,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -701,7 +616,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -709,17 +624,18 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="chart-toggle"><a href="javascript:">收起<div class="chart-toggle-icon"></div></a></div>  
-                        </div>    
+                            <div class="chart-toggle"><a href="javascript:">收起<div class="chart-toggle-icon"></div></a></div>
+                        </div>
                         <div class="chart">
-                            <div class="text-bigger"><div class="chart-icon2"></div>客座率</div>
+                            <div class="text-bigger">
+                                <div class="chart-icon2"></div>客座率</div>
                             <div class="product-between">
                                 <div id="circle3" class="circle"></div>
                                 <div id="line-bar3" class="line-bar"></div>
@@ -732,9 +648,15 @@
                             <div>
                                 <div class="chart-progress chart-progress-3col">
                                     <div class="chart-sort">
-                                        <div>旅客量<div class="chart-sort-icon"></div></div>
-                                        <div>客座率<div class="chart-sort-icon"></div></div>
-                                        <div>航班量<div class="chart-sort-icon"></div></div>
+                                        <div>旅客量
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>客座率
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>航班量
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
                                     </div>
                                     <div class="product-between">
                                         <ul>
@@ -743,7 +665,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -751,7 +673,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -759,7 +681,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -767,7 +689,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -775,7 +697,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -783,7 +705,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -791,7 +713,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -799,7 +721,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -807,7 +729,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -815,7 +737,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -825,7 +747,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -833,7 +755,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -841,7 +763,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -849,7 +771,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -857,7 +779,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -865,7 +787,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -873,7 +795,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -881,7 +803,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -889,7 +811,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -897,7 +819,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -907,7 +829,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -915,7 +837,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -923,7 +845,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -931,7 +853,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -939,7 +861,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -947,7 +869,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -955,7 +877,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -963,7 +885,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -971,7 +893,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -979,7 +901,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -994,9 +916,15 @@
                                         </div>
                                     </div>
                                     <div class="chart-sort">
-                                        <div>旅客量<div class="chart-sort-icon"></div></div>
-                                        <div>客座率<div class="chart-sort-icon"></div></div>
-                                        <div>航班量<div class="chart-sort-icon"></div></div>
+                                        <div>旅客量
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>客座率
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>航班量
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
                                     </div>
                                     <div class="product-between">
                                         <ul>
@@ -1005,7 +933,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1013,7 +941,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1021,7 +949,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1029,7 +957,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1037,7 +965,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1045,7 +973,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1053,7 +981,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1061,7 +989,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1069,7 +997,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1077,7 +1005,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -1087,7 +1015,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1095,7 +1023,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1103,7 +1031,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1111,7 +1039,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1119,7 +1047,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1127,7 +1055,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1135,7 +1063,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1143,7 +1071,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1151,7 +1079,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1159,7 +1087,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -1169,7 +1097,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1177,7 +1105,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1185,7 +1113,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1193,7 +1121,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1201,7 +1129,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1209,7 +1137,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1217,7 +1145,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1225,7 +1153,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1233,7 +1161,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1241,7 +1169,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -1256,9 +1184,15 @@
                                         </div>
                                     </div>
                                     <div class="chart-sort">
-                                        <div>旅客量<div class="chart-sort-icon"></div></div>
-                                        <div>客座率<div class="chart-sort-icon"></div></div>
-                                        <div>航班量<div class="chart-sort-icon"></div></div>
+                                        <div>旅客量
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>客座率
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
+                                        <div>航班量
+                                            <div class="chart-sort-icon"></div>
+                                        </div>
                                     </div>
                                     <div class="product-between">
                                         <ul>
@@ -1267,7 +1201,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1275,7 +1209,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1283,7 +1217,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1291,7 +1225,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1299,7 +1233,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1307,7 +1241,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1315,7 +1249,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1323,7 +1257,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1331,7 +1265,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1339,7 +1273,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -1349,7 +1283,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1357,7 +1291,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1365,7 +1299,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1373,7 +1307,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1381,7 +1315,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1389,7 +1323,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1397,7 +1331,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1405,7 +1339,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1413,7 +1347,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1421,7 +1355,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -1431,7 +1365,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1439,7 +1373,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1447,7 +1381,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:70%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1455,7 +1389,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:50%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1463,7 +1397,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1471,7 +1405,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:40%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1479,7 +1413,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:60%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1487,7 +1421,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:80%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1495,7 +1429,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:20%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                             <li>
@@ -1503,7 +1437,7 @@
                                                 <span class="progress progress-big">
                                                     <span class="progress-inner" style="width:30%">
                                                         <span class="progress-num">1500</span>
-                                                    </span>
+                                                </span>
                                                 </span>
                                             </li>
                                         </ul>
@@ -1517,91 +1451,10 @@
             </div>
         </div>
     </div>
-    
-    <div class="dialog dialog-info hide">
-    <div class="dialog-inner">
-        <div class="dialog-header">
-            <h2>修改用户信息</h2>
-            <a href="javascript:" class="dialog-close"></a>
-        </div>
-        <div class="dialog-main">
-            <ul class="form">
-                <li>
-                    <label>
-                        账号
-                        <input type="text" class="input" value="VIPUI" disabled>
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        部门
-                        <input type="text" class="input" value="QK_MANAGER" disabled>
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        帐号状态
-                        <input type="text" class="input">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        申请人姓名
-                        <span class="form-require">*</span>
-                        <input type="text" class="input">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        手机
-                        <input type="text" class="input" value="18818809999">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        邮箱
-                        <input type="text" class="input" value="18818809999@163.com">
-                    </label>
-                </li>
-            </ul>
-            <label>
-                备注
-                <textarea class="textarea"></textarea>
-            </label>
-        </div>
-        <div class="dialog-footer">
-            <a href="javascript:" class="btn-primary">保存</a>
-        </div>
-    </div>
-</div>
-<script>
-    (function() {
-            function changeViewport() {
-            var u = navigator.userAgent;
-            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-            var windowWidth;
 
-            if (window.orientation == 90 || window.orientation == -90 && isiOS) {
-            windowWidth = window.screen.height;
-            } else {
-            windowWidth = window.screen.width;
-            }
-
-            if (windowWidth < 1280) {
-                var ratio = windowWidth / 1280;
-                var metas = document.querySelectorAll("meta[name=viewport]");
-                for (var i in metas) {
-                    if (typeof metas[i].setAttribute == 'function') {
-                        metas[i].setAttribute('content', 'width=1280, initial-scale=' + ratio + ', maximum-scale=' + ratio + '');
-                    }
-                }
-            }
-        }
-        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", changeViewport, false);
-    })();
-</script>
-<script src="../../js/pages/common.js"></script>
-<script type="text/javascript" src="../../lib/echarts/echarts.common.min.js"></script>
-<script src="../../js/pages/dashboard.js"></script>
+    <link rel="import" href="../common/footer.html?__inline">
+    <script type="text/javascript" src="../../lib/echarts/echarts.common.min.js"></script>
+    <script src="../../js/pages/dashboard.js"></script>
 </body>
+
 </html>
