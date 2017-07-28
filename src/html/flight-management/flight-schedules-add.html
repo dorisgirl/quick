@@ -24,8 +24,8 @@
                                     航班
                                     <span class="form-require">*</span>
                                     <span class="select-input">
-                                        <select class="select select-small">
-                                            <option>二字码</option>
+                                        <select class="select select-small" required>
+                                            <option value="" disabled selected hidden>两字码</option>
                                         </select>
                                         <input type="text" class="input input-small">
                                     </span>
@@ -124,16 +124,20 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <select class="select select-small" style="width:100px">
-                                            <option>STD320</option>
-                                        </select>
-                                        <div class="text-gray text-small">机型320</div>
+                                        <div style="text-align:left;display:inline-block;">
+                                            <select class="select select-small" style="width:100px">
+                                                <option>STD320</option>
+                                            </select>
+                                            <div class="text-gray text-small">机型320</div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <select class="select select-small">
-                                            <option>ASI320</option>
-                                        </select>
-                                        <div class="text-gray text-small">附加服务概要说明：儿童 婴儿</div>
+                                        <div style="text-align:left;display:inline-block;">
+                                            <select class="select select-small" required style="width:100px">
+                                                <option>ASI320</option>
+                                            </select>
+                                            <div class="text-gray text-small">附加服务概要说明：儿童 婴儿</div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -221,7 +225,7 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <select class="select select-small">
+                                        <select class="select select-small" required style="width:100px">
                                             <option>ASI320</option>
                                         </select>
                                     </td>

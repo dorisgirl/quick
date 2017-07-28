@@ -23,7 +23,7 @@
                                 <label>
                                     行李代码
                                     <span class="form-require">*</span>
-                                    <select class="select select-small">
+                                    <select class="select select-small" required>
                                     </select>
                                 </label>
                             </li>
@@ -62,7 +62,7 @@
                                 <label>
                                     行李代码
                                     <span class="form-require">*</span>
-                                    <select class="select select-small">
+                                    <select class="select select-small" required>
                                         <option value="">全部</option>
                                     </select>
                                 </label>
@@ -133,6 +133,11 @@
     </div>
 
     <link rel="import" href="../common/footer.html?__inline">
+    <script>
+        $('.radio').click(function() {
+            $(this).addClass('active').parents('li').siblings().find('.radio').removeClass('active');
+        })
+    </script>
 </body>
 
 </html>

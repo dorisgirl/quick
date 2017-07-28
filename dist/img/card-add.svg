@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
   <defs>
     <style>
       .cls-1 {
@@ -7,5 +7,5 @@
       }
     </style>
   </defs>
-  <path id="加-icon" class="cls-1" d="M788,709h24v2H788v-2Zm11-11h2v24h-2V698Z" transform="translate(-788 -698)"/>
+  <path id="增加按钮_拷贝_2" data-name="增加按钮 拷贝 2" class="cls-1" d="M795,708h11v1H795v-1Zm5-5h1v11h-1V703Zm-11,5.5A11.5,11.5,0,1,0,800.5,697,11.513,11.513,0,0,0,789,708.5Zm1.008,0a10.49,10.49,0,1,1,10.44,10.487A10.475,10.475,0,0,1,790.008,708.5Z" transform="translate(-789 -697)"/>
 </svg>

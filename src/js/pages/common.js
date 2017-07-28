@@ -1,5 +1,5 @@
 __inline('../jquery-1.11.3.min.js');
-__inline('../../node_modules/flatpickr/dist/flatpickr.min.js');
+__inline('../../lib/flatpickr/dist/flatpickr.min.js');
 __inline('../components/checkbox.js');
 __inline('../components/radio.js');
 __inline('../components/date.js');

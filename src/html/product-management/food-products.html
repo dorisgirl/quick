@@ -23,7 +23,7 @@
                                 <label>
                                     餐食代码
                                     <span class="form-require">*</span>
-                                    <select class="select select-small">
+                                    <select class="select select-small" required>
                                         <option value="">MEAL01</option>
                                     </select>
                                     名称：鱼香肉丝饭
@@ -48,7 +48,7 @@
                                 <label>
                                     出发地
                                     <span class="form-require">*</span>
-                                    <select class="select select-small">
+                                    <select class="select select-small" required>
                                         <option value="">所有出发地</option>
                                         <option value="">XIY[咸阳机场</option>
                                         <option value="">PEK[首都机场]</option>
@@ -69,15 +69,15 @@
                             <li>
                                 <label>
                                     餐食代码
-                                    <select class="select select-small">
-                                        <option value="">请选择</option>
+                                    <select class="select select-small" required>
+                                        <option value="" disabled selected hidden>请选择</option>
                                     </select>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     出发地
-                                    <input type="text" class="input input-small" placeholder="三字码">
+                                    <input type="text" class="input input-small" placeholder="两字码">
                                 </label>
                             </li>
                         </ul>

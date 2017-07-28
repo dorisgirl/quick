@@ -118,7 +118,7 @@
                                     航班
                                     <span class="select-input">
                                         <select class="select select-small" disabled>
-                                            <option value="">三字码</option>
+                                            <option value="" disabled selected hidden>两字码</option>
                                         </select>
                                         <input type="text" class="input input-small" disabled>
                                     </span>
@@ -273,7 +273,7 @@
                                 <label>
                                     优惠方式
                                     <select class="select select-small" disabled>
-                                        <option value="">请选择</option>
+                                        <option value="" disabled selected hidden>请选择</option>
                                     </select>
                                 </label>
                             </li>
@@ -293,7 +293,9 @@
                             <li>
                                 <label>
                                     货币
-                                    <input type="text" class="input input-small" disabled>
+                                    <select class="select select-small" required>
+                                        <option value="" disabled selected hidden>请选择</option>
+                                    </select>
                                 </label>
                             </li>
                         </ul>

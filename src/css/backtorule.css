@@ -90,11 +90,6 @@
     height: 80px
 }
 
-.backtorule-table tr:last-child td {
-    padding-bottom: 20px;
-    height: 80px
-}
-
 .backtorule-add-btn {
     text-align: right
 }

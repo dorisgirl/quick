@@ -29,7 +29,7 @@
                             <li>
                                 <label>
                                     货币种类
-                                    <select class="select select-small">
+                                    <select class="select select-small" required>
                                         <option value="">RMB</option>
                                     </select>
                                 </label>
@@ -41,14 +41,14 @@
                                     <label class="radio-group-title">
                                         手续费计算方式
                                     </label>
-                                    <label class="radio disabled" style="margin-right:47px"><input type="radio">固定值</label>
-                                    <label class="radio active"><input type="radio" checked>百分比</label>
+                                    <label class="radio table-percent-hide" style="margin-right:47px"><input type="radio">固定值</label>
+                                    <label class="radio active table-percent-show"><input type="radio" checked>百分比</label>
                                 </div>
                             </li>
                             <li>
                                 <label>
                                     计算基础
-                                    <select class="select select-small">
+                                    <select class="select select-small" required>
                                         <option value="">Y舱正价</option>
                                     </select>
                                 </label>
@@ -76,11 +76,12 @@
                                         航班计划起飞前<input type="text" class="input input-small backtorule-add-input1">小时(含)
                                     </td>
                                     <td>
-                                        <input type="text" class="input input-small backtorule-add-input2" value="10">%
+                                        <input type="text" class="input input-small backtorule-add-input2" value="10">
+                                        <span class="table-percent">%</span>
                                     </td>
                                     <td>
                                         <input type="text" class="input input-small backtorule-add-input2" value="¥ 200">
-                                        <a href="" class="card-del"></a>
+                                        <a href="javascript:" class="table-del"></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -88,11 +89,12 @@
                                         航班计划起飞前<input type="text" class="input input-small backtorule-add-input1">小时(含)
                                     </td>
                                     <td>
-                                        <input type="text" class="input input-small backtorule-add-input2" value="10">%
+                                        <input type="text" class="input input-small backtorule-add-input2" value="10">
+                                        <span class="table-percent">%</span>
                                     </td>
                                     <td>
                                         <input type="text" class="input input-small backtorule-add-input2" value="¥ 200">
-                                        <a href="" class="card-del"></a>
+                                        <a href="javascript:" class="table-del"></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -100,7 +102,8 @@
                                         其他时间段
                                     </td>
                                     <td>
-                                        <input type="text" class="input input-small backtorule-add-input2" value="40">%
+                                        <input type="text" class="input input-small backtorule-add-input2" value="40">
+                                        <span class="table-percent">%</span>
                                     </td>
                                     <td style="padding-right:24px;">
                                         <input type="text" class="input input-small backtorule-add-input2" value="¥ 200">
@@ -136,11 +139,12 @@
                                         航班计划起飞前<input type="text" class="input input-small backtorule-add-input1">小时(含)
                                     </td>
                                     <td>
-                                        <input type="text" class="input input-small backtorule-add-input2" value="10">%
+                                        <input type="text" class="input input-small backtorule-add-input2" value="10">
+                                        <span class="table-percent">%</span>
                                     </td>
                                     <td>
                                         <input type="text" class="input input-small backtorule-add-input2" value="¥ 200">
-                                        <a href="" class="card-del"></a>
+                                        <a href="javascript:" class="table-del"></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -148,11 +152,12 @@
                                         航班计划起飞前<input type="text" class="input input-small backtorule-add-input1">小时(含)
                                     </td>
                                     <td>
-                                        <input type="text" class="input input-small backtorule-add-input2" value="10">%
+                                        <input type="text" class="input input-small backtorule-add-input2" value="10">
+                                        <span class="table-percent">%</span>
                                     </td>
                                     <td>
                                         <input type="text" class="input input-small backtorule-add-input2" value="¥ 200">
-                                        <a href="" class="card-del"></a>
+                                        <a href="javascript:" class="table-del"></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -160,7 +165,8 @@
                                         其他时间段
                                     </td>
                                     <td>
-                                        <input type="text" class="input input-small backtorule-add-input2" value="40">%
+                                        <input type="text" class="input input-small backtorule-add-input2" value="40">
+                                        <span class="table-percent">%</span>
                                     </td>
                                     <td style="padding-right:24px;">
                                         <input type="text" class="input input-small backtorule-add-input2" value="¥ 200">
@@ -186,6 +192,7 @@
     </div>
 
     <link rel="import" href="../common/footer.html?__inline">
+    <script src="../../js/pages/back-to-rule.js"></script>
 </body>
 
 </html>

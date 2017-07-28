@@ -28,7 +28,8 @@
 }
 
 .input-date {
-    position: relative
+    position: relative;
+    display: flex;
 }
 
 .input-date-icon {
@@ -113,13 +114,15 @@
     height: 38px;
     border: 1px solid #e5e5e5;
     background: #fff;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     border-radius: 0;
     padding: 0 15px;
     background: url(../img/select.png) no-repeat right 16px center;
     font-size: 14px
+}
+
+select:invalid {
+    color: #cecece;
 }
 
 .select-small {

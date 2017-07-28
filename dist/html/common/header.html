@@ -1,15 +1,15 @@
 <meta name="viewport" content="target-densitydpi=device-dpi,width=1280,user-scalable=no">
 <script>
     (function() {
-            function changeViewport() {
+        function changeViewport() {
             var u = navigator.userAgent;
             var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
             var windowWidth;
 
             if (window.orientation == 90 || window.orientation == -90 && isiOS) {
-            windowWidth = window.screen.height;
+                windowWidth = window.screen.height;
             } else {
-            windowWidth = window.screen.width;
+                windowWidth = window.screen.width;
             }
 
             if (windowWidth < 1280) {
@@ -30,7 +30,7 @@
         <div class="header-logo"></div>
         <div class="header-user">
             <a href="javascript:">
-                <img src="../../img/header-user.png" alt="">
+                <img src=__relative("/img/header-user.png") alt="">
                 <span class="header-user-name">Dashboar</span>
                 <span class="header-user-icon"></span>
             </a>

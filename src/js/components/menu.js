@@ -1,7 +1,14 @@
 ! function(i, t) {
     var n = {
         init: function() { this.index = 0, this.position = 0, this.menuWidth = [], this.totleWidth = 0, this.initMenuWitdh(), this.bindEvents() },
-        bindEvents: function() { t("body").on("click", ".menu-switch", this.toggleSidebar.bind(this)), t("body").on("click", ".menu-close", this.removeMenu.bind(this)), t("body").on("click", ".menu li", this.switchMenu.bind(this)), t("body").on("click", ".menu-prev", this.prevMenu.bind(this)), t("body").on("click", ".menu-next", this.nextMenu.bind(this)) },
+        bindEvents: function() {
+            t("body").on("click", ".menu-switch", this.toggleSidebar.bind(this));
+            t("body").on("click", ".menu-close", this.removeMenu.bind(this));
+            t("body").on("click", ".menu li", this.switchMenu.bind(this));
+            t("body").on("click", ".menu-prev", this.prevMenu.bind(this));
+            t("body").on("click", ".menu-next", this.nextMenu.bind(this));
+            t(window).on("scroll", this.fixedMenu.bind(this));
+        },
         initMenuWitdh: function() {
             var i = this;
             t(".menu li").each(function() { i.menuWidth.push(t(this).width()), i.totleWidth += t(this).width() + 22 }), console.log(this.totleWidth), this.totleWidth > 1055 && t(".menu-next").addClass("active")
@@ -21,6 +28,13 @@
         nextMenu: function() {
             var i = this;
             this.index < this.menuWidth.length - 1 && (this.position = this.position - (i.menuWidth[this.index] + 22), t(".menu ul").animate({ left: this.position }), console.log(this.index, i.menuWidth[this.index]), this.index++, t(".menu-prev").addClass("active"), this.index == this.menuWidth.length - 1 && t(".menu-next").removeClass("active"))
+        },
+        fixedMenu: function() {
+            if (t(window).scrollTop() > 90) {
+                $('.menu').addClass('menu-fixed');
+            } else {
+                $('.menu').removeClass('menu-fixed');
+            }
         }
     };
     n.init()

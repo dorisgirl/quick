@@ -29,7 +29,7 @@
                             <li>
                                 <label>
                                     货币种类
-                                    <select class="select select-small">
+                                    <select class="select select-small" required>
                                         <option value="">RMB</option>
                                     </select>
                                 </label>
@@ -41,14 +41,14 @@
                                     <label class="radio-group-title">
                                         手续费计算方式
                                     </label>
-                                    <label class="radio" style="margin-right:47px"><input type="radio">固定值</label>
-                                    <label class="radio active"><input type="radio" checked>百分比</label>
+                                    <label class="radio table-percent-hide" style="margin-right:47px"><input type="radio" checked>固定值</label>
+                                    <label class="radio active table-percent-show"><input type="radio" checked>百分比</label>
                                 </div>
                             </li>
                             <li>
                                 <label>
                                     计算基础
-                                    <select class="select select-small">
+                                    <select class="select select-small" required>
                                         <option value="">Y舱正价</option>
                                     </select>
                                 </label>
@@ -76,7 +76,8 @@
                                     </td>
                                     <td>
                                         <input type="text" class="input input-small backtorule-add-input2">
-                                        <a href="javascript:" class="table-add"></a>
+                                        <span class="table-percent">%</span>
+                                        <a href="javascript:" class="table-del"></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -85,6 +86,7 @@
                                     </td>
                                     <td>
                                         <input type="text" class="input input-small backtorule-add-input2">
+                                        <span class="table-percent">%</span>
                                         <a href="javascript:" class="table-del"></a>
                                     </td>
                                 </tr>
@@ -94,6 +96,14 @@
                                     </td>
                                     <td>
                                         <input type="text" class="input input-small backtorule-add-input2">
+                                        <span class="table-percent">%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding:0;">
+                                        <div class="card-add">
+                                            <a href="" class="card-add-icon"></a>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -119,6 +129,7 @@
                                     </td>
                                     <td>
                                         <input disabled type="text" class="input input-small backtorule-add-input2">
+                                        <span class="table-percent">%</span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -127,6 +138,7 @@
                                     </td>
                                     <td>
                                         <input type="text" disabled class="input input-small backtorule-add-input2">
+                                        <span class="table-percent">%</span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -141,6 +153,7 @@
     </div>
 
     <link rel="import" href="../common/footer.html?__inline">
+    <script src="../../js/pages/back-to-rule.js"></script>
 </body>
 
 </html>
