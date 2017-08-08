@@ -4,7 +4,9 @@
     border: 1px solid #e5e5e5;
     width: 100%;
     font-size: 14px;
-    padding: 0 15px
+    padding: 0 15px;
+    appearance: none;
+    border-radius: 0;
 }
 
 .input-small {
@@ -355,6 +357,7 @@ select:invalid {
     width: 27px;
     height: 27px;
     background: url(../img/form-switch.svg) no-repeat;
+    background-size: cover;
     position: absolute;
     right: -32px;
     top: 30px

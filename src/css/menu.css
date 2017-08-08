@@ -1,12 +1,18 @@
 .menu {
-    background: #fff
+    background: #fff;
+    box-shadow: 4px 4px 40px 0 rgba(0, 0, 0, 0.05);
+    height: 66px;
+}
+
+.menu-inner {
+    background: #fff;
 }
 
 .menu .layout-center {
     display: flex;
     align-items: center;
+    position: relative;
     height: 66px;
-    position: relative
 }
 
 .menu-list {
@@ -40,7 +46,8 @@
     background: url(../img/menu-switch.svg) no-repeat;
     width: 28px;
     height: 19px;
-    margin-right: 63px
+    margin-right: 63px;
+    margin-left: 5px;
 }
 
 .menu-prev {
@@ -66,6 +73,7 @@
 
 .menu-next.active {
     background-image: url(../img/menu-next-active.svg);
+    background-size: cover;
     cursor: pointer
 }
 
@@ -99,10 +107,10 @@
     background-image: url(../img/menu-close-active.svg)
 }
 
-.menu-fixed {
+.menu-fixed .menu-inner {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }

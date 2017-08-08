@@ -1,4 +1,18 @@
-! function(n, t) {
-    var i = { init: function() { this.bindEvents() }, bindEvents: function() { t("body").on("change", ".checkbox input", this.toggleCheckbox.bind(this)) }, toggleCheckbox: function(n) { t(n.target).closest(".checkbox").toggleClass("active") } };
-    i.init()
+! function(t, $) {
+    var e = {
+        init: function() {
+            this.bindEvents()
+        },
+        bindEvents: function() {
+            $("body").on("change", ".checkbox input", this.toggleCheckbox.bind(this))
+        },
+        toggleCheckbox: function(t) {
+            var $this = $(t.target).closest(".checkbox");
+            if (!$this.hasClass('disabled')) {
+                $this.toggleClass("active");
+                $(t.target).closest("tr").toggleClass("active")
+            }
+        }
+    };
+    e.init()
 }(window, jQuery);

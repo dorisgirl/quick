@@ -1,0 +1,1 @@
+!function(n,i){var a={init:function(){this.bindEvent()},bindEvent:function(){i("body").on("click",".login-language a",this.changeLanguage.bind(this))},changeLanguage:function(n){i(n.target).addClass("active").siblings().removeClass("active")}};a.init()}(window,jQuery);

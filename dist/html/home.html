@@ -20,7 +20,7 @@
             </a>
             <div class="header-user-dropdown">
                 <ul>
-                    <li><a href="javascript:"><span class="header-user-lock"></span>密码修改</a></li>
+                    <li id="header-user-password"><a href="javascript:"><span class="header-user-lock"></span>密码修改</a></li>
                     <li id="header-user-info"><a href="javascript:"><span class="header-user-info"></span>资料修改</a></li>
                     <li><a href="javascript:"><span class="header-user-cn"></span>中文</a></li>
                     <li><a href="javascript:"><span class="header-user-en"></span>English</a></li>
@@ -208,6 +208,70 @@
         </div>
         <div class="dialog-footer">
             <a href="javascript:" class="btn-primary">保存</a>
+        </div>
+    </div>
+</div>
+
+<div class="dialog dialog-password hide">
+    <div class="dialog-inner">
+        <div class="dialog-header">
+            <h2><span class="header-user-lock"></span>修改用户密码</h2>
+            <a href="javascript:" class="dialog-close"></a>
+        </div>
+        <div class="dialog-main">
+            <ul class="form">
+                <li>
+                    <label>
+                        原始密码
+                        <span class="form-require">*</span>
+                        <input type="text" class="input">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        新密码
+                        <span class="form-require">*</span>
+                        <input type="password" class="input" placeholder="8-20位，须包含数字及英文字母，允许特殊字符">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        确认密码
+                        <input type="password" class="input" placeholder="请再次输入新密码">
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">保存</a>
+        </div>
+    </div>
+</div>
+
+<div class="dialog dialog-small dialog-delete hide">
+    <div class="dialog-inner">
+        <div class="dialog-header">
+            <h2>提示</h2>
+        </div>
+        <div class="dialog-main">
+            <div class="text-big">确定要删除该附加服务模板吗？</div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-normal">取消</a>
+            <a href="javascript:" class="btn-primary">确定</a>
+        </div>
+    </div>
+</div>
+<div class="dialog dialog-small dialog-delete-success hide">
+    <div class="dialog-inner">
+        <div class="dialog-main">
+            <div class="dialog-success"></div>
+            <div class="text-success">
+                删除成功
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">确定</a>
         </div>
     </div>
 </div>

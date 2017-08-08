@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>quick</title>
+    <link rel="stylesheet" href="../../css/index.css" />
+</head>
+
+<body>
+    <link rel="import" href="../common/header.html?__inline">
+    <div class="layout-r1">
+        <div class="layout-center">
+            <div class="layout-r1c1 hide">
+                <link rel="import" href="../common/sidebar.html?__inline">
+            </div>
+            <div class="layout-r1c2">
+                <div class="product">
+                    <div class="product-form">
+                        <ul class="form">
+                            <li>
+                                <label>
+                                    审核状态
+                                    <select class="select select-small" required>
+                                        <option value="">待财务审核</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    操作人
+                                    <input type="text" class="input input-small">
+                                </label>
+                            </li>
+                            <li>
+                                <label>审核日期<span class="input-date">
+                                        <input type="text" class="input input-small">
+                                        <span class="input-date-icon"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    至
+                                    <span class="input-date">
+                                        <input type="text" class="input input-small">
+                                        <span class="input-date-icon"></span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form">
+                            <li>
+                                <label>
+                                    退票类型
+                                    <select class="select select-small" required>
+                                        <option value="" disabled selected hidden>请选择</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    退款申请号
+                                    <input type="text" class="input input-small">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    申请人
+                                    <input type="text" class="input input-small">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    航班
+                                    <span class="select-input">
+                                        <select class="select select-small" required>
+                                            <option value="" disabled selected hidden>两字码</option>
+                                        </select>
+                                        <input type="text" class="input input-small">
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form">
+                            <li>
+                                <label>
+                                    订单号
+                                    <input type="text" class="input input-small">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    旅客
+                                    <input type="text" class="input input-small">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    支付渠道
+                                    <select class="select select-small" required>
+                                        <option value="" disabled selected hidden>请选择</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    支付流水号
+                                    <input type="text" class="input input-small">
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form">
+                            <li>
+                                <label>
+                                    申请日期
+                                    <span class="input-date">
+                                        <input type="text" class="input input-small">
+                                        <span class="input-date-icon"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    至
+                                    <span class="input-date">
+                                        <input type="text" class="input input-small">
+                                        <span class="input-date-icon"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    订单日期
+                                    <span class="input-date">
+                                        <input type="text" class="input input-small">
+                                        <span class="input-date-icon"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    至
+                                    <span class="input-date">
+                                        <input type="text" class="input input-small">
+                                        <span class="input-date-icon"></span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="form">
+                            <li>
+                                <label>
+                                    航班日期
+                                    <span class="input-date">
+                                        <input type="text" class="input input-small">
+                                        <span class="input-date-icon"></span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    至
+                                    <span class="input-date">
+                                        <input type="text" class="input input-small">
+                                        <span class="input-date-icon"></span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="product-btn">
+                            <a href="" class="btn-primary">搜索</a>
+                            <a href="" class="btn-normal">重置</a>
+                        </div>
+                    </div>
+                    <div class="product-table">
+                        <table class="table table-border">
+                            <colgroup>
+                                <col width="50">
+                                <col width="">
+                                <col width="70">
+                                <col width="">
+                                <col width="70">
+                                <col width="100">
+                                <col width="100">
+                                <col width="">
+                                <col width="70">
+                                <col width="">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><label class="checkbox"><input type="checkbox"></label></th>
+                                    <th>退款申请号</th>
+                                    <th>申请人</th>
+                                    <th>申请日期</th>
+                                    <th>退票类型</th>
+                                    <th>审核应退金额</th>
+                                    <th>审核状态</th>
+                                    <th>订单号</th>
+                                    <th>操作人</th>
+                                    <th>最后操作日期</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><label class="checkbox"><input type="checkbox"></label></td>
+                                    <td><a href="">20170425099558</a></td>
+                                    <td>王明</td>
+                                    <td>2017-04-25 22:33:03</td>
+                                    <td>自愿</td>
+                                    <td>
+                                        <div class="text-price">¥2568</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-price">待财务审核</div>
+                                    </td>
+                                    <td><a href="">CTO201704250344862</a></td>
+                                    <td>李三四</td>
+                                    <td>2017-04-25 22:33:03</td>
+                                </tr>
+                                <tr>
+                                    <td><label class="checkbox"><input type="checkbox"></label></td>
+                                    <td><a href="">20170425099558</a></td>
+                                    <td>王明</td>
+                                    <td>2017-04-25 22:33:03</td>
+                                    <td>自愿</td>
+                                    <td>
+                                        <div class="text-price">¥2568</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-price">待财务审核</div>
+                                    </td>
+                                    <td><a href="">CTO201704250344862</a></td>
+                                    <td>李三四</td>
+                                    <td>2017-04-25 22:33:03</td>
+                                </tr>
+                                <tr>
+                                    <td><label class="checkbox"><input type="checkbox"></label></td>
+                                    <td><a href="">20170425099558</a></td>
+                                    <td>王明</td>
+                                    <td>2017-04-25 22:33:03</td>
+                                    <td>自愿</td>
+                                    <td>
+                                        <div class="text-price">¥2568</div>
+                                    </td>
+                                    <td>
+                                        <div class="text-price">待财务审核</div>
+                                    </td>
+                                    <td><a href="">CTO201704250344862</a></td>
+                                    <td>李三四</td>
+                                    <td>2017-04-25 22:33:03</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pages">
+                            <a href="" class="pages-prev disabled"></a>
+                            <a href="" class="active">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="">5</a> ...
+                            <a href="">25</a>
+                            <a href="" class="pages-next"></a>
+                            共25条
+                        </div>
+                    </div>
+                    <div class="product-form">
+                        <ul class="form">
+                            <li style="width:100%">
+                                <label>
+                                    批量审核意见
+                                    <span class="form-require">*</span>
+                                    <textarea class="textarea" placeholder="200字以内"></textarea>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="product-btn">
+                            <a href="" class="btn-primary">批量审核通过</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="import" href="../common/footer.html?__inline">
+</body>
+
+</html>

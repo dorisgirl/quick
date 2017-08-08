@@ -1,1 +1,1 @@
-!function(i,n){var t={init:function(){n(".input-date .input").flatpickr({minDate:"today"})}};t.init()}(window,jQuery);
+!function(i,t){var n={init:function(){t(".input-date .input").flatpickr({minDate:"today",disableMobile:"true"})}};n.init()}(window,jQuery);

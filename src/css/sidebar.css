@@ -1,5 +1,16 @@
 .sidebar {
-    background: #158fe4
+    background: #158fe4;
+    position: relative;
+}
+
+.sidebar::before {
+    content: '';
+    border-color: transparent transparent #158fe4 transparent;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+    top: -12px;
+    left: 12px;
 }
 
 .sidebar-parent>a {
@@ -97,7 +108,7 @@
 }
 
 .sidebar-parent.active .sidebar-list {
-    display: block
+    display: block;
 }
 
 .sidebar-parent.active .sidebar-arrow {

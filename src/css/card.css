@@ -72,7 +72,17 @@
 .card-arrow {
     width: 11px;
     height: 7px;
-    background: url(../img/card-arrow.svg) no-repeat
+    background: url(../img/card-arrow.svg) no-repeat;
+    position: relative;
+}
+
+.card-arrow:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
 }
 
 .card-footer {

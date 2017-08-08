@@ -55,7 +55,7 @@
     height: 39px;
     margin: 0 7px 23px;
     position: relative;
-    background-size: cover
+    background-size: cover;
 }
 
 .plane-seat-normal {
@@ -270,7 +270,8 @@
 .plane-seat-economy .plane-seat-orange {
     width: 38px;
     height: 29px;
-    margin: 0 4px 20px
+    margin: 0 4px 20px;
+    background-size: cover;
 }
 
 .plane-seat-economy .plane-seat-del {

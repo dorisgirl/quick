@@ -25,7 +25,8 @@
     padding: 0 5px;
 }
 
-.table tr:hover td {
+.table tr.hover:hover td,
+.table tr.active td {
     background: #e7f4fc
 }
 
@@ -79,12 +80,23 @@
     margin-bottom: 0
 }
 
-.table-question {
+.table-question{
+    position: relative;
+    text-align: left;
+}
+.table-question-icon {
     display: inline-block;
     vertical-align: middle;
     width: 20px;
     height: 20px;
-    background: url(../img/table-question.svg) no-repeat
+    background: url(../img/table-question.svg) no-repeat;
+}
+.table-question .popover{
+    transform: translate(-50%, 22%);
+    display: none;
+}
+.table-question:hover .popover{
+    display: block;
 }
 
 .table .input {
@@ -153,23 +165,25 @@
     height: 25px;
     display: inline-block;
     vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0 5px
 }
 
 .table-flight-icon1 {
-    background: url(../img/table-flight-icon1.svg) no-repeat
+    background-image: url(../img/table-flight-icon1.svg);
 }
 
 .table-flight-icon2 {
-    background: url(../img/table-flight-icon2.svg) no-repeat
+    background-image: url(../img/table-flight-icon2.svg);
 }
 
 .table-flight-icon3 {
-    background: url(../img/table-flight-icon3.svg) no-repeat
+    background-image: url(../img/table-flight-icon3.svg);
 }
 
 .table-flight-icon4 {
-    background: url(../img/table-flight-icon4.svg) no-repeat
+    background-image: url(../img/table-flight-icon4.svg);
 }
 
 .table-flight-logo {

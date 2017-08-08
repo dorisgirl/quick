@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <meta name="viewport" content="target-densitydpi=device-dpi,width=1280,user-scalable=no"><div class="header">
+    <meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="target-densitydpi=device-dpi,width=1280,user-scalable=no"><div class="header">
     <div class="layout-center">
         <div class="header-logo"></div>
         <div class="header-user">
@@ -20,7 +21,7 @@
             </a>
             <div class="header-user-dropdown">
                 <ul>
-                    <li><a href="javascript:"><span class="header-user-lock"></span>密码修改</a></li>
+                    <li id="header-user-password"><a href="javascript:"><span class="header-user-lock"></span>密码修改</a></li>
                     <li id="header-user-info"><a href="javascript:"><span class="header-user-info"></span>资料修改</a></li>
                     <li><a href="javascript:"><span class="header-user-cn"></span>中文</a></li>
                     <li><a href="javascript:"><span class="header-user-en"></span>English</a></li>
@@ -31,28 +32,30 @@
     </div>
 </div>
 <div class="menu">
-    <div class="layout-center">
-        <a href="javascript:" class="menu-switch"></a>
-        <a href="javascript:" class="menu-prev"></a>
-        <div class="menu-list">
-            <ul>
-                <li class="active"><a href="javascript:">首页</a></li>
-                <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
-                <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
-            </ul>
+    <div class="menu-inner">
+        <div class="layout-center">
+            <a href="javascript:" class="menu-switch"></a>
+            <a href="javascript:" class="menu-prev"></a>
+            <div class="menu-list">
+                <ul>
+                    <li class="active"><a href="javascript:">首页</a></li>
+                    <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">仪表盘<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">座位产品价格<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">新建销售规则<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">销售规则行情<span class="menu-close"></span></a></li>
+                    <li><a href="javascript:">保险产品价格<span class="menu-close"></span></a></li>
+                </ul>
+            </div>
+            <div class="menu-mask"></div>
+            <a href="javascript:" class="menu-next"></a>
         </div>
-        <div class="menu-mask"></div>
-        <a href="javascript:" class="menu-next"></a>
     </div>
 </div>
     <div class="layout-r1">
@@ -124,7 +127,7 @@
                                 <label>
                                     审核状态
                                     <select class="select select-small" required>
-                                        <option value="">待业务审核</option>
+                                        <option value="">财务审核</option>
                                     </select>
                                 </label>
                             </li>
@@ -444,6 +447,424 @@
         </div>
         <div class="dialog-footer">
             <a href="javascript:" class="btn-primary">保存</a>
+        </div>
+    </div>
+</div>
+
+<div class="dialog dialog-password hide">
+    <div class="dialog-inner">
+        <div class="dialog-header">
+            <h2><span class="header-user-lock"></span>修改用户密码</h2>
+            <a href="javascript:" class="dialog-close"></a>
+        </div>
+        <div class="dialog-main">
+            <ul class="form">
+                <li>
+                    <label>
+                        原始密码
+                        <span class="form-require">*</span>
+                        <input type="text" class="input">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        新密码
+                        <span class="form-require">*</span>
+                        <input type="password" class="input" placeholder="8-20位，须包含数字及英文字母，允许特殊字符">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        确认密码
+                        <input type="password" class="input" placeholder="请再次输入新密码">
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">保存</a>
+        </div>
+    </div>
+</div>
+
+<div class="dialog dialog-small dialog-delete hide">
+    <div class="dialog-inner">
+        <div class="dialog-header">
+            <h2>提示</h2>
+        </div>
+        <div class="dialog-main">
+            <div class="text-big">确定要删除该附加服务模板吗？</div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-normal">取消</a>
+            <a href="javascript:" class="btn-primary">确定</a>
+        </div>
+    </div>
+</div>
+<div class="dialog dialog-small dialog-delete-success hide">
+    <div class="dialog-inner">
+        <div class="dialog-main">
+            <div class="dialog-success"></div>
+            <div class="text-success">
+                删除成功
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">确定</a>
+        </div>
+    </div>
+</div>
+<div class="dialog dialog-abnormal hide">
+    <div class="dialog-inner">
+        <div class="dialog-header">
+            <h2>差错类型：<span class="text-danger">出票异常</span></h2>
+            <a href="javascript:" class="dialog-close"></a>
+        </div>
+        <div class="dialog-main">
+            <ul class="form">
+                <li>
+                    <label>
+                        申请人姓名
+                        <span class="form-require">*</span>
+                        <input type="text" class="input">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        手机
+                        <input type="text" class="input" value="18818809999">
+                    </label>
+                </li>
+            </ul>
+            <label>
+                差错退款原因
+                <span class="form-require">*</span> 
+                <textarea class="textarea" placeholder="200字以内"></textarea>
+            </label>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">提交申请</a>
+        </div>
+    </div>
+</div>
+<div class="dialog dialog-small hide">
+    <div class="dialog-inner">
+        <div class="dialog-header">
+            <h2>提示</h2>
+        </div>
+        <div class="dialog-main">
+            <div class="text-big">是否提交差错申请？</div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-normal">取消</a>
+            <a href="javascript:" class="btn-primary">确定</a>
+        </div>
+    </div>
+</div>
+<div class="dialog dialog-small hide">
+    <div class="dialog-inner">
+        <div class="dialog-main">
+            <div class="dialog-success"></div>
+            <div class="text-big">
+                申请成功！您的差错退款申请单号为：<br>
+                <a href="">20161121000318</a>
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">确定</a>
+        </div>
+    </div>
+</div>
+<div class="dialog dialog-small hide">
+    <div class="dialog-inner">
+        <div class="dialog-main">
+            <div class="dialog-error"></div>
+            <div class="text-danger">
+                申请失败<br>
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">确定</a>
+        </div>
+    </div>
+</div>
+
+<div class="dialog dialog-seat hide">
+    <div class="dialog-inner">
+        <div class="dialog-header">
+            <h2>选座</h2>
+            <a href="javascript:" class="dialog-close"></a>
+        </div>
+        <div class="dialog-main">
+            <div class="dialog-seat-between">
+                <div class="dialog-seat-form">
+                    <div class="dialog-seat-tab">
+                        <a href="">PEK-SHA</a>
+                        <a class="text-gray" href="">SHA-PEK</a>
+                    </div>
+                    <ul>
+                        <li><label>刘亦菲<input type="text" class="input"></label></li>
+                        <li><label>刘亦菲<input type="text" class="input"></label></li>
+                        <li><label>刘亦菲<input type="text" class="input"></label></li>
+                        <li><label>刘亦菲<input type="text" class="input"></label></li>
+                        <li><label>刘亦菲<input type="text" class="input"></label></li>
+                        <li><label>刘亦菲<input type="text" class="input"></label></li>
+                        <li><label>刘亦菲<input type="text" class="input"></label></li>
+                        <li><label>刘亦菲<input type="text" class="input"></label></li>
+                    </ul>
+                </div>
+                <div class="dialog-seat-select">
+                    <div class="plane-seat-economy">
+                        <div class="plane-seat-row dialog-seat-select-row">
+                            <div>
+                                <div class="plane-seat-normal">
+                                    <div class="plane-seat-people"></div>
+                                </div>
+                                <div class="text-big text-gray">可选</div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-disabled">
+                                    <div class="plane-seat-people"></div>
+                                </div>
+                                <div class="text-big text-gray">已售</div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-primary">
+                                </div>
+                                <div class="text-big text-gray">已选</div>
+                            </div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div>
+                                <div class="plane-seat-no">A</div>
+                                <div class="plane-seat-no">B</div>
+                                <div class="plane-seat-no">C</div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-no">D</div>
+                                <div class="plane-seat-no">E</div>
+                                <div class="plane-seat-no">F</div>
+                            </div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">1</div>
+                            <div>
+                                <div class="plane-seat-primary"></div>
+                                <div class="plane-seat-primary"></div>
+                                <div class="plane-seat-primary"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">1</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">2</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">2</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">3</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-disabled">
+                                    <div class="plane-seat-people"></div>
+                                </div>
+                                <div class="plane-seat-disabled">
+                                    <div class="plane-seat-people"></div>
+                                </div>
+                                <div class="plane-seat-disabled">
+                                    <div class="plane-seat-people"></div>
+                                </div>
+                            </div>
+                            <div class="plane-seat-index2">3</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">4</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">4</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">5</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">5</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">6</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">6</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">7</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">7</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">8</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">8</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">9</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">9</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">10</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">10</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">11</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">11</div>
+                        </div>
+                        <div class="plane-seat-row">
+                            <div class="plane-seat-index">12</div>
+                            <div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div>
+                                <div class="plane-seat-normal">
+                                </div>
+                                <div class="plane-seat-normal"></div>
+                                <div class="plane-seat-normal"></div>
+                            </div>
+                            <div class="plane-seat-index2">12</div>
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="dialog-seat-info">
+                    <li>
+                        <div class="plane-info1"></div><span class="dialog-seat-info-text">VIP专享</span>￥0</li>
+                    <li>
+                        <div class="plane-info2"></div><span class="dialog-seat-info-text">靠窗坐</span>￥0</li>
+                    <li>
+                        <div class="plane-info3"></div><span class="dialog-seat-info-text">宽敞座</span>￥0</li>
+                    <li>
+                        <div class="plane-info4"></div><span class="dialog-seat-info-text">舒适座</span>￥0</li>
+                    <li>
+                        <div class="plane-info5"></div><span class="dialog-seat-info-text">普通座</span>￥0</li>
+                    <li>
+                        <div class="plane-info6"></div><span class="dialog-seat-info-text">免费座位</span>￥0</li>
+                    <li>
+                        <div class="plane-info1"></div><span class="dialog-seat-info-text">座位7</span>￥0</li>
+                    <li>
+                        <div class="plane-info2"></div><span class="dialog-seat-info-text">座位8</span>￥0</li>
+                    <li>
+                        <div class="plane-info3"></div><span class="dialog-seat-info-text">座位9</span>￥0</li>
+                    <li>
+                        <div class="plane-info4"></div><span class="dialog-seat-info-text">座位10</span>￥0</li>
+                    <li>
+                        <div class="plane-info5"></div><span class="dialog-seat-info-text">座位11</span>￥0</li>
+                    <li>
+                        <div class="plane-info6"></div><span class="dialog-seat-info-text">座位12</span>￥0</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:" class="btn-primary">保存</a>
+            <a href="javascript:" class="btn-normal">取消</a>
         </div>
     </div>
 </div>

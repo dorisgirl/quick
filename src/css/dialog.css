@@ -10,11 +10,11 @@
 
 .dialog-inner {
     width: 680px;
-    position: absolute;
+    position: fixed;
     background: #fff;
     left: 50%;
-    top: 100px;
-    transform: translate(-50%, 0)
+    top: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .dialog-header {
@@ -28,7 +28,9 @@
 }
 
 .dialog-header h2 {
-    font-size: 16px
+    font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .dialog-close {
@@ -48,6 +50,11 @@
 
 .dialog-footer a {
     margin: 0 4px
+}
+
+.dialog-info .dialog-main {
+    height: 400px;
+    overflow-y: auto;
 }
 
 .dialog-info .form {
@@ -202,4 +209,11 @@
 
 .dialog-form input {
     margin-bottom: 20px
+}
+
+.dialog-seat .dialog-inner {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, 0);
 }

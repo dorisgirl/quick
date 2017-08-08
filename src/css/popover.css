@@ -44,3 +44,12 @@
     border-right: 1px solid #eaeaea;
     text-align: center
 }
+.popover-arrow{
+    border-width: 9px;
+    border-style: solid;
+    border-color:transparent transparent #fff transparent;
+    position: absolute;
+    left: 50%;
+    top: -18px;
+    transform: translate(-50%,0);
+}

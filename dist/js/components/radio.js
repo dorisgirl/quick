@@ -1,1 +1,1 @@
-!function(i,n){var t={init:function(){this.bindEvents()},bindEvents:function(){n("body").on("click",".radio",this.selectRadio.bind(this))},selectRadio:function(i){n(i.target).addClass("active").siblings().removeClass("active")}};t.init()}(window,jQuery);
+!function(i,t){var n={init:function(){this.bindEvents()},bindEvents:function(){t("body").on("click",".radio",this.selectRadio.bind(this))},selectRadio:function(i){t(i.target).hasClass("disabled")||t(i.target).addClass("active").siblings().removeClass("active")}};n.init()}(window,jQuery);

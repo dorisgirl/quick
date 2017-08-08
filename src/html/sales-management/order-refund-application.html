@@ -150,6 +150,64 @@
                                     <div class="card-main" style="text-align:right">
                                         <a href="" class="btn-primary">试算退票手续费</a>
                                     </div>
+                                    <div class="card-main hide">
+                                        <ul class="form" style="margin-bottom:50px">
+                                            <li style="width:100%">
+                                                <label>
+                                                    非自愿退票原因
+                                                    <select class="select select-small" required>
+                                                        <option value="" disabled selected hidden>请选择</option>
+                                                    </select>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <ul class="form" style="margin-bottom:50px">
+                                            <li style="width:100%">
+                                                <label>
+                                                    差错退款原因
+                                                    <span class="form-require">*</span>
+                                                    <textarea class="textarea" placeholder="200字以内"></textarea>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <ul class="product-between">
+                                            <li>
+                                                <div>
+                                                    123.png
+                                                    <a href="javascript:" class="table-close"></a>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-inner" style="width:40%"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    123.png
+                                                    <a href="javascript:" class="table-close"></a>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-inner" style="width:40%"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    123.png
+                                                    <a href="javascript:" class="table-close"></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="product-between">
+                                            <li>
+                                                <div>
+                                                    123.png
+                                                    <a href="javascript:" class="table-close"></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div style="text-align:right;margin-top:50px">
+                                            <a href="" class="btn-primary">上传文件</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card" style="width:48%">
@@ -194,6 +252,12 @@
     </div>
 
     <link rel="import" href="../common/footer.html?__inline">
+    <script>
+        $('.card-header .radio').click(function() {
+            var index = $('.card-header .radio').index(this);
+            $(this).parents('.card').find('.card-main').eq(index).removeClass('hide').siblings('.card-main').addClass('hide');
+        })
+    </script>
 </body>
 
 </html>

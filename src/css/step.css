@@ -1,5 +1,6 @@
 .step {
-    position: relative
+    position: relative;
+    display: inline-block;
 }
 
 .step::before {

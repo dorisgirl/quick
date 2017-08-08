@@ -1,5 +1,5 @@
 .layout-center {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto
 }
 
@@ -11,7 +11,10 @@
 .layout-r1c1,
 .layout-r2c1 {
     width: 201px;
-    background: #158fe4
+    background: #158fe4;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
 }
 
 .layout-r1c2 {

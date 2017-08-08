@@ -14,6 +14,10 @@
     color: #666
 }
 
+.text-success {
+    color: #158fe4;
+}
+
 .text-small {
     font-size: 12px
 }
