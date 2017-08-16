@@ -25,9 +25,12 @@
     padding: 0 5px;
 }
 
-.table tr.hover:hover td,
+.table tr:hover td,
 .table tr.active td {
     background: #e7f4fc
+}
+.table tr.nohover:hover td{
+    background: none;
 }
 
 .table-border td {

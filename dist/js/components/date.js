@@ -1,1 +1,1 @@
-!function(i,t){var n={init:function(){t(".input-date .input").flatpickr({minDate:"today",disableMobile:"true"})}};n.init()}(window,jQuery);
+!function(i,n){var t={init:function(){n(".input-date .input").flatpickr({minDate:"today",disableMobile:"true",onOpen:function(i,n,t){$(t.element).closest("li").find(".form-label").addClass("hide")}})}};t.init()}(window,jQuery);

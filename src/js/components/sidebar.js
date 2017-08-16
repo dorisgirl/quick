@@ -7,6 +7,7 @@
             t("body").on("click", ".sidebar-parent", this.toggleSidebar.bind(this));
         },
         toggleSidebar: function(e) {
+            e.stopPropagation();
             t(e.target).closest(".sidebar-parent").toggleClass("active")
         }
     };

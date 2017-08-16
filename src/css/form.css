@@ -75,6 +75,9 @@
     background: url(../img/input-date2-next.svg) no-repeat
 }
 
+.input-number{
+    white-space: nowrap;
+}
 .input-number .input {
     width: 76px;
     margin: 5px 0
